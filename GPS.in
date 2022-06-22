@@ -4,6 +4,4 @@
 /gps/ene/type User
 /gps/hist/type energy
 /gps/hist/point 0.063 11.4122
-/gps/hist/point	0.067 6.3097 
-/gps/hist/point 0.071 5.3299 
 /gps/hist/inter Log
