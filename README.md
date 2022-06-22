@@ -9,4 +9,4 @@ Author:
 Brief description:
     The program simulates the CBCT system BKCT01 at Hanoi University of Science and Technology to study to reduce scattering and improve the quality of CT reconstruction images.
 
-Program Structure:
+Program Structure: (Will be updated)
