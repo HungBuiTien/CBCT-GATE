@@ -1,7 +1,0 @@
-/gps/particle gamma
-/gps/direction 1 0 0
-/gps/position 0 0 0
-/gps/ene/type User
-/gps/hist/type energy
-/gps/hist/point 0.063 11.4122
-/gps/hist/inter Log
