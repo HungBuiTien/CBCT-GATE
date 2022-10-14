@@ -1,0 +1,9 @@
+/gate/world/daughters/name                      DetectorPlane
+/gate/world/daughters/insert                    box
+/gate/DetectorPlane/geometry/setZLength         116.424 mm
+/gate/DetectorPlane/geometry/setYLength         145.728 mm
+/gate/DetectorPlane/geometry/setXLength         0.15 mm
+/gate/DetectorPlane/placement/setTranslation    993.15 0 0 mm
+/gate/DetectorPlane/setMaterial                 NaI
+/gate/DetectorPlane/vis/setVisible              1
+/gate/DetectorPlane/vis/setColor                yellow

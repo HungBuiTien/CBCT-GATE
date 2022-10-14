@@ -1,4 +1,3 @@
-
 /gate/verbose Physic    1
 /gate/verbose Cuts      1
 /gate/verbose SD        0
@@ -11,5 +10,4 @@
 /gate/verbose Beam      0
 /gate/verbose Volume    0
 /gate/verbose Image     0
-/gate/verbose Geometry  0
-/gate/verbose Core      0
+/gate/verbose Geometry  2

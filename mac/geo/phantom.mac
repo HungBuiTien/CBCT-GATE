@@ -1,0 +1,78 @@
+/gate/world/daughters/name                      cylSam
+/gate/world/daughters/insert                    cylinder
+/gate/cylSam/geometry/setRmin                   0. cm
+/gate/cylSam/geometry/setRmax                   1.8 cm
+/gate/cylSam/geometry/setHeight                 4. cm
+/gate/cylSam/setMaterial                        Air
+/gate/cylSam/placement/setTranslation           841.25 0 0 mm
+/gate/cylSam/vis/setVisible                     0
+
+/gate/cylSam/daughters/name                     layer1
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer1/geometry/setRmin                   1.2 cm
+/gate/layer1/geometry/setRmax                   1.8 cm
+/gate/layer1/geometry/setHeight                 0.5 cm
+/gate/layer1/setMaterial                        Aluminium
+/gate/layer1/placement/setTranslation           0. 0. -1.75 cm
+/gate/layer1/vis/setVisible                     1
+/gate/layer1/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer2
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer2/geometry/setRmin                   1.2 cm
+/gate/layer2/geometry/setRmax                   1.7 cm
+/gate/layer2/geometry/setHeight                 0.5 cm
+/gate/layer2/setMaterial                        Aluminium
+/gate/layer2/placement/setTranslation           0. 0. -1.25 cm
+/gate/layer2/vis/setVisible                     1
+/gate/layer2/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer3
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer3/geometry/setRmin                   1.2 cm
+/gate/layer3/geometry/setRmax                   1.6 cm
+/gate/layer3/geometry/setHeight                 0.5 cm
+/gate/layer3/setMaterial                        Aluminium
+/gate/layer3/placement/setTranslation           0. 0. -0.75 cm
+/gate/layer3/vis/setVisible                     1
+/gate/layer3/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer4
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer4/geometry/setRmin                   1.2 cm
+/gate/layer4/geometry/setRmax                   1.4 cm
+/gate/layer4/geometry/setHeight                 1.0 cm
+/gate/layer4/setMaterial                        Aluminium
+/gate/layer4/placement/setTranslation           0. 0. 0. cm
+/gate/layer4/vis/setVisible                     1
+/gate/layer4/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer5
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer5/geometry/setRmin                   1.2 cm
+/gate/layer5/geometry/setRmax                   1.6 cm
+/gate/layer5/geometry/setHeight                 0.5 cm
+/gate/layer5/setMaterial                        Aluminium
+/gate/layer5/placement/setTranslation           0. 0. 0.75 cm
+/gate/layer5/vis/setVisible                     1
+/gate/layer5/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer6
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer6/geometry/setRmin                   1.2 cm
+/gate/layer6/geometry/setRmax                   1.7 cm
+/gate/layer6/geometry/setHeight                 0.5 cm
+/gate/layer6/setMaterial                        Aluminium
+/gate/layer6/placement/setTranslation           0. 0. 1.25 cm
+/gate/layer6/vis/setVisible                     1
+/gate/layer6/vis/setColor                       red
+
+/gate/cylSam/daughters/name                     layer7
+/gate/cylSam/daughters/insert                   cylinder
+/gate/layer7/geometry/setRmin                   1.2 cm
+/gate/layer7/geometry/setRmax                   1.8 cm
+/gate/layer7/geometry/setHeight                 0.5 cm
+/gate/layer7/setMaterial                        Aluminium
+/gate/layer7/placement/setTranslation           0. 0. 1.75 cm
+/gate/layer7/vis/setVisible                     1
+/gate/layer7/vis/setColor                       red

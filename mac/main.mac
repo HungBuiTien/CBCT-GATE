@@ -1,164 +1,97 @@
 
-#=====================================================
-# VERBOSITY
-#=====================================================
-
 /control/execute mac/verbose.mac
-
-#=====================================================
-# VISUALISATION
-#=====================================================
-
-/control/execute mac/visu.mac
 
 #=====================================================
 # GEOMETRY
 #=====================================================
-
-# -----------------------------------------------------
-# World
-/gate/geometry/setMaterialDatabase data/Materials.db
-/gate/world/setMaterial                         Air
-/gate/world/geometry/setXLength                 3 m
-/gate/world/geometry/setYLength                 3 m
-/gate/world/geometry/setZLength                 3 m
-/gate/world/vis/setVisible                      0
-
-# Detection plane
-/gate/world/daughters/name                      DetectorPlane
-/gate/world/daughters/insert                    box
-/gate/DetectorPlane/geometry/setZLength         116.424 mm
-/gate/DetectorPlane/geometry/setYLength         145.728 mm
-/gate/DetectorPlane/geometry/setXLength         0.15 mm
-/gate/DetectorPlane/placement/setTranslation    993.15 0 0 mm
-/gate/DetectorPlane/setMaterial                 Air
-/gate/DetectorPlane/vis/setVisible              1
-/gate/DetectorPlane/vis/setColor                yellow
-
-# Sample
-/gate/world/daughters/name                      cylSam
-/gate/world/daughters/insert                    cylinder
-/gate/cylSam/geometry/setRmin                   0. cm
-/gate/cylSam/geometry/setRmax                   1.8 cm
-/gate/cylSam/geometry/setHeight                 4. cm
-/gate/cylSam/setMaterial                        Air
-/gate/cylSam/placement/setTranslation           841.25 0 0 mm
-/gate/cylSam/vis/setVisible                     0
-
-/gate/cylSam/daughters/name                     layer1
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer1/geometry/setRmin                   1.2 cm
-/gate/layer1/geometry/setRmax                   1.8 cm
-/gate/layer1/geometry/setHeight                 0.5 cm
-/gate/layer1/setMaterial                        Aluminium
-/gate/layer1/placement/setTranslation           0. 0. -1.75 cm
-/gate/layer1/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer2
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer2/geometry/setRmin                   1.2 cm
-/gate/layer2/geometry/setRmax                   1.7 cm
-/gate/layer2/geometry/setHeight                 0.5 cm
-/gate/layer2/setMaterial                        Aluminium
-/gate/layer2/placement/setTranslation           0. 0. -1.25 cm
-/gate/layer2/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer3
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer3/geometry/setRmin                   1.2 cm
-/gate/layer3/geometry/setRmax                   1.6 cm
-/gate/layer3/geometry/setHeight                 0.5 cm
-/gate/layer3/setMaterial                        Aluminium
-/gate/layer3/placement/setTranslation           0. 0. -0.75 cm
-/gate/layer3/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer4
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer4/geometry/setRmin                   1.2 cm
-/gate/layer4/geometry/setRmax                   1.4 cm
-/gate/layer4/geometry/setHeight                 1.0 cm
-/gate/layer4/setMaterial                        Aluminium
-/gate/layer4/placement/setTranslation           0. 0. 0. cm
-/gate/layer4/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer5
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer5/geometry/setRmin                   1.2 cm
-/gate/layer5/geometry/setRmax                   1.6 cm
-/gate/layer5/geometry/setHeight                 0.5 cm
-/gate/layer5/setMaterial                        Aluminium
-/gate/layer5/placement/setTranslation           0. 0. 0.75 cm
-/gate/layer5/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer6
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer6/geometry/setRmin                   1.2 cm
-/gate/layer6/geometry/setRmax                   1.7 cm
-/gate/layer6/geometry/setHeight                 0.5 cm
-/gate/layer6/setMaterial                        Aluminium
-/gate/layer6/placement/setTranslation           0. 0. 1.25 cm
-/gate/layer6/vis/setVisible                     1
-
-/gate/cylSam/daughters/name                     layer7
-/gate/cylSam/daughters/insert                   cylinder
-/gate/layer7/geometry/setRmin                   1.2 cm
-/gate/layer7/geometry/setRmax                   1.8 cm
-/gate/layer7/geometry/setHeight                 0.5 cm
-/gate/layer7/setMaterial                        Aluminium
-/gate/layer7/placement/setTranslation           0. 0. 1.75 cm
-/gate/layer7/vis/setVisible                     1
+/gate/geometry/setMaterialDatabase      data/GateMaterials.db
+/control/execute                        mac/geo/world.mac
+/control/execute                        mac/geo/phantom.mac
+/control/execute                        mac/geo/detector.mac
 
 #=====================================================
-# PHYSIC
+# PHYSICS
 #=====================================================
-
-/gate/physics/addPhysicsList emstandard_opt1
-
-/gate/physics/Gamma/SetCutInRegion      world 10 mm
-/gate/physics/Electron/SetCutInRegion   world 10 mm
-/gate/physics/Positron/SetCutInRegion   world 10 mm
-
+/gate/physics/addPhysicsList            empenelope
+/gate/physics/Gamma/SetCutInRegion      world 0.1 mm
+/gate/physics/Electron/SetCutInRegion   world 0.1 mm
+/gate/physics/Positron/SetCutInRegion   world 0.1 mm
 /gate/physics/displayCuts
 
-#=====================================================
-# INITIALISATION
-#=====================================================
+#/gate/physics/addProcess PhotoElectric gamma
+#/gate/physics/addProcess Compton gamma
+#/gate/physics/addProcess RayleighScattering gamma
+#/gate/physics/addProcess GammaConversion
 
-/gate/run/initialize
-
-#=====================================================
-# BEAM
-#=====================================================
-/gate/source/addSource                      histogram gps
-/gate/source/histogram/gps/pos/type         Point
-/gate/source/histogram/gps/pos/centre       0 0 0 mm
-/gate/source/histogram/gps/particle         gamma
-/gate/source/histogram/gps/ene/type         Mono
-/gate/source/histogram/gps/ene/mono         60 keV
-#/gate/source/histogram/gps/ene/type         UserSpectrum
-#/gate/source/histogram/gps/setSpectrumFile  data/histogram.txt
-
-/gate/source/histogram/setIntensity         1
-/gate/source/histogram/gps/ang/minphi       0. deg
-/gate/source/histogram/gps/ang/maxphi       30. deg
-/gate/source/histogram/gps/direction        1 0 0
+/gate/physics/print physList.txt
 
 #=====================================================
 # DETECTORS
 #=====================================================
+/gate/actor/addActor                     DoseActor  dose3d
+/gate/actor/dose3d/save                  output/detector.mhd
+/gate/actor/dose3d/attachTo    	         DetectorPlane
+/gate/actor/dose3d/stepHitType           random
+/gate/actor/dose3d/setPosition           0 0 0 cm
+/gate/actor/dose3d/setSize               0.15 145.728 116.424 mm
+/gate/actor/dose3d/setResolution         1 1472 1176
+/gate/actor/dose3d/saveEveryNSeconds     10
+/gate/actor/dose3d/enableEdep            true
+/gate/actor/dose3d/enableUncertaintyEdep false
+/gate/actor/dose3d/enableDose            false
+/gate/actor/dose3d/enableUncertaintyDose false
+/gate/actor/dose3d/enableNumberOfHits    false
 
-# Photon counting detector
-/gate/actor/addActor FluenceActor           DetectorActor
-/gate/actor/DetectorActor/save              output/detector.mhd
-/gate/actor/DetectorActor/attachTo          DetectorPlane
-/gate/actor/DetectorActor/stepHitType       pre
-#/gate/actor/DetectorActor/setSize          10 409.6 409.6 mm
-/gate/actor/DetectorActor/setSize           10 500 500 mm
-/gate/actor/DetectorActor/setResolution     1 100 100
-/gate/actor/DetectorActor/enableScatter     true
-/gate/actor/DetectorActor/saveEveryNSeconds 20
+/gate/actor/addActor                     SimulationStatisticActor stat
+/gate/actor/stat/save                    output/stat.txt
+/gate/actor/stat/saveEveryNSeconds       10
 
-# Stat
-/gate/actor/addActor                        SimulationStatisticActor stat
-/gate/actor/stat/save                       output/stats.txt
-/gate/actor/stat/saveEveryNSeconds          20
+#=====================================================
+# INITIALISATION
+#=====================================================
+/gate/run/initialize
+#/gate/physics/processList                Available
+#/gate/physics/processList                Enabled
+
+#=====================================================
+# BEAMS
+#=====================================================
+/gate/source/addSource mybeam            gps
+/gate/source/mybeam/gps/particle         gamma
+
+/gate/source/mybeam/gps/pos/type         Plane
+/gate/source/mybeam/gps/pos/shape        Rectangle
+/gate/source/mybeam/gps/pos/halfy        0.025 mm
+/gate/source/mybeam/gps/pos/halfz        0.025 mm
+
+/gate/source/mybeam/gps/angtype          iso
+/gate/source/mybeam/gps/ang/minphi       0. deg
+/gate/source/mybeam/gps/ang/maxphi       360. deg
+/gate/source/mybeam/gps/ang/mintheta     0. deg
+/gate/source/mybeam/gps/ang/maxtheta     15. deg
+
+/gate/source/mybeam/gps/energytype       UserSpectrum
+/gate/source/mybeam/gps/setSpectrumFile  data/DiscreteSpectrum.txt
+/gate/source/mybeam/setIntensity 1
+
+/gate/source/mybeam/gps/ang/rot1         0 0 1
+#/gate/source/mybeam/gps/ang/rot2        0 1 0
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+#/control/execute mac/visu.mac
+
+#=====================================================
+# START BEAMS
+#=====================================================
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed 123456
+
+# /gate/random/verbose 1
+# /gate/source/verbose 0
+
+/gate/application/noGlobalOutput
+/gate/application/setTotalNumberOfPrimaries 10000000
+/gate/application/start

@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0 -72.814499999999995 -58.162500000000001
+CenterOfRotation = 0 0 0
+ElementSpacing = 0.15000000596046448 0.098999999463558197 0.098999999463558197
+DimSize = 1 1472 1176
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = detector56-Edep.raw
