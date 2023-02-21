@@ -5,7 +5,7 @@ Hệ thống cắt lớp công nghiệp sử dụng chùm tia hình nón có vai
 Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ được xây dựng dựa trên Geant4) để mô phỏng một hệ CBCT đơn giản nhằm nghiên cứu ảnh hưởng của hiệu ứng "làm cứng chùm tia".
 
 ## Yêu cầu:
-+ Cài đặt Geant4, ROOT và GATE.
++ Nếu sử dụng Linux hãy cài đặt Geant4, ROOT và GATE.
 + Nếu sử dụng Window có thể dùng V-Gate chạy trên máy ảo.
 
 ## Hướng dẫn sử dụng:
