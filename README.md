@@ -42,7 +42,7 @@ $ condor_q
 $ condor_statuts
 ``` 
 
-Thay đổi chế độ mô phỏng song song bằng dòng:
+Thay đổi sang chế độ mô phỏng song song bằng dòng:
 
 ```c++
 /gate/application/startDAQCluster
