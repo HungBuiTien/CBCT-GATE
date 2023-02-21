@@ -12,11 +12,26 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
   ' >> Gate mac/cbct.mac '
+  
+ ## Mô tả:
+ ### Hình học:
+ - Khối World: có kích thước 200x200x200 cm3, chứa không khí
+ - Tấm FPD:
+ - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
+ 
+ ### Quá trình vật lý:
+ - Loại hạt e+, e- và gamma
+ - Quá trình vật lý cho e+: Bremsstrahlung, ElectronIonisation
+ - Quá trình vật lý cho e-: Bremsstrahlung,  ElectronIonisation
+ - Quá trình vật lý cho gamma: Compton, PhotoElectric, RayleighScattering
+ 
+ ### Nguồn phát:
+ ### Ghi nhận:
  
  ## Đóng góp:
  
  ## Tác giả:
- Bùi Tiến Hưng
+ **Bùi Tiến Hưng**
  
  Nghiên cứu viên - Viện Năng lượng nguyên tử Việt Nam (VINATOM)
  
