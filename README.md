@@ -57,7 +57,10 @@ $ .../Gate/cluster_tools/jobsplitter/gjs -numberofsplits n -clusterplatform cond
 ```Linux Kernel Module
 $ condor_submit file_name.submit
 ``` 
-
+Kiểm tra tiến trình bằng lệnh:
+```Linux Kernel Module
+$ condor_q
+``` 
 
 3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
