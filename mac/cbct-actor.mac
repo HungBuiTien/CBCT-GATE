@@ -2,8 +2,7 @@
 /gate/actor/DetectorActor/save              output/detector.mhd
 /gate/actor/DetectorActor/attachTo          DetectorPlane
 /gate/actor/DetectorActor/stepHitType       pre
-#/gate/actor/DetectorActor/setSize          0.15 145.728 116.424 mm
-/gate/actor/DetectorActor/setSize           10 500 500 mm
+/gate/actor/DetectorActor/setSize           0.15 145.728 116.424 mm
 /gate/actor/DetectorActor/setResolution     1 1472 1176
 /gate/actor/DetectorActor/enableScatter     true
 /gate/actor/DetectorActor/saveEveryNSeconds 20
