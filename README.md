@@ -12,6 +12,12 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
   ' >> Gate mac/cbct.mac '
+  
+ ## Mô tả:
+ ### Hình học:
+ ### Quá trình vật lý:
+ ### Nguồn phát:
+ ### Ghi nhận:
  
  ## Đóng góp:
  
