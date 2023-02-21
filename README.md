@@ -23,6 +23,8 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 
 
 2. Hướng dẫn chạy mô phỏng
+- Để chạy tính toán đơn nhân sử dụng lệnh sau:
+> >> Gate mac/cbct.mac
 
 3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
