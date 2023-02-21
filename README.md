@@ -15,6 +15,10 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
   
  ## Mô tả:
  ### Hình học:
+ - Khối World: có kích thước 200x200x200 cm3, chứa không khí
+ - Tấm FPD:
+ - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
+ 
  ### Quá trình vật lý:
  ### Nguồn phát:
  ### Ghi nhận:
