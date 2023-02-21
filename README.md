@@ -57,7 +57,7 @@ Thay đổi chế độ mô phỏng song song bằng dòng:
 
   
  + Sử dụng mã Python để hiển thị kết quả
- <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/results.png">
+ <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/results.png" width="700" alt="...">
  
   Hình 1. Kết quả mô phỏng với 1E8 sự kiện
   
@@ -67,12 +67,12 @@ Thay đổi chế độ mô phỏng song song bằng dòng:
  - Tấm FPD:
  - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
   
-   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/phantom.png">
+   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/phantom.png" width="700">
    
    Hình 2. Kích thước phantom nhôm
    
    
-   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/geometry.png">
+   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/geometry.png" width="700">
    
    Hình 3. Hình ảnh mô phỏng với 50 sự kiện
    
