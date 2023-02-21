@@ -9,6 +9,22 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 + Nếu sử dụng Window có thể dùng V-Gate chạy trên máy ảo.
 
 ## Hướng dẫn sử dụng:
+1. Hướng dẫn thay đổi thông số mô phỏng
+- Thay đổi vị trí của phantom bằng cách thay đổi giá trị 841.25 mm trong tệp *cbct-geo-phantom-cylinder.mac*:
+```c++
+/gate/cylSam/placement/setTranslation           841.25 0 0 mm
+```
+
+- Thay đổi độ phân giải của tấm FPD bằng cách đổi giá trị (1472 1176) trong tệp *cbct-actor.mac*:
+```c++
+/gate/actor/DetectorActor/setResolution     1 1472 1176
+```
+
+
+
+2. Hướng dẫn chạy mô phỏng
+
+3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
 
