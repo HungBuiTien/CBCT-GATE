@@ -12,4 +12,4 @@
 
 # JamesRandom Ranlux64 MersenneTwister
 /gate/random/setEngineName MersenneTwister
-/gate/random/setEngineSeed 123456
+/gate/random/setEngineSeed auto
