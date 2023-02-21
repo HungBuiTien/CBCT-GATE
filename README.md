@@ -24,13 +24,29 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 
 2. Hướng dẫn chạy mô phỏng
 - Để chạy tính toán đơn nhân sử dụng lệnh sau:
-> >> Gate mac/cbct.mac
+```Linux Kernel Module
+$ Gate mac/cbct.mac
+```
+
+- Tính toán song song:
+
+Hãy cài HTCondor trên Linux trước bằng các lệnh sau:
+```Linux Kernel Module
+$ sudo apt-get install htcondor
+$ sudo condor_master
+```
+
+Kiểm tra xem HTCondor đã cài thành công hay chưa bằng một trong hai lệnh dưới đây:
+```Linux Kernel Module
+$ condor_q
+$ condor_statuts
+``` 
 
 3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
 
-  ' >> Gate mac/cbct.mac '
+
   
  + Sử dụng mã Python để hiển thị kết quả
  <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/results.png">
