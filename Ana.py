@@ -40,7 +40,7 @@ def read_mhd(path):
 image = read_mhd(r"output/detector.mhd")
 
 # image = (image/image.max())*(2**16)
-plt.imshow(image[:,:,0], cmap='jet')
+plt.imshow(image[:,:,0], cmap='gray')
 plt.xlabel("columns")
 plt.ylabel("rows")
 plt.title("Film response")
