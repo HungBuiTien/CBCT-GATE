@@ -48,6 +48,15 @@ Thay đổi sang chế độ mô phỏng song song bằng dòng:
 /gate/application/startDAQCluster
 ```
 
+Dùng lệnh sau để phân chia chương trình:
+```Linux Kernel Module
+$ .../Gate/cluster_tools/jobsplitter/gjs -numberofsplits n -clusterplatform condor -condorscript .../Gate/cluster_tools/jobsplitter/script/condor.script file_name.mac
+``` 
+
+Để submit tệp vào trình quản lý HTCondor sử dụng lệnh sau:
+```Linux Kernel Module
+$ condor_submit file_name.submit
+``` 
 
 
 3. Hướng dẫn vẽ kết quả
