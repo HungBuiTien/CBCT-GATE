@@ -20,9 +20,9 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
  - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
  
  ### Quá trình vật lý:
- - Loại hạt e+, e- và gamma,
+ - Loại hạt e+, e- và gamma
  - Quá trình vật lý cho e+: Bremsstrahlung, ElectronIonisation
- - Quá trình vật lý cho e-: Bremsstrahlung  ElectronIonisation
+ - Quá trình vật lý cho e-: Bremsstrahlung,  ElectronIonisation
  - Quá trình vật lý cho gamma: Compton, PhotoElectric, RayleighScattering
  
  ### Nguồn phát:
