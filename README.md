@@ -42,6 +42,14 @@ $ condor_q
 $ condor_statuts
 ``` 
 
+Thay đổi chế độ mô phỏng song song bằng dòng:
+
+```c++
+/gate/application/startDAQCluster
+```
+
+
+
 3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
