@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = 0 -249.83000000000001 -249.78700000000001
+CenterOfRotation = 0 0 0
+ElementSpacing = 10 0.33967390656471252 0.42517006397247314
+DimSize = 1 1472 1176
+AnatomicalOrientation = ???
+ElementType = MET_FLOAT
+ElementDataFile = detector.raw

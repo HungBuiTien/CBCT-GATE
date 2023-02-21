@@ -1,0 +1,20 @@
+/gate/source/addSource mybeam            gps
+/gate/source/mybeam/gps/particle         gamma
+
+/gate/source/mybeam/gps/pos/type         Plane
+/gate/source/mybeam/gps/pos/shape        Rectangle
+/gate/source/mybeam/gps/pos/halfy        0.025 mm
+/gate/source/mybeam/gps/pos/halfz        0.025 mm
+
+/gate/source/mybeam/gps/angtype          iso
+/gate/source/mybeam/gps/ang/minphi       0. deg
+/gate/source/mybeam/gps/ang/maxphi       360. deg
+/gate/source/mybeam/gps/ang/mintheta     0. deg
+/gate/source/mybeam/gps/ang/maxtheta     15. deg
+
+/gate/source/mybeam/gps/energytype       UserSpectrum
+/gate/source/mybeam/gps/setSpectrumFile  data/DiscreteSpectrum.txt
+/gate/source/mybeam/setIntensity 1
+
+/gate/source/mybeam/gps/ang/rot1         0 0 1
+#/gate/source/mybeam/gps/ang/rot2        0 1 0
