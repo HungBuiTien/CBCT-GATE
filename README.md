@@ -31,7 +31,7 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
  ## Đóng góp:
  
  ## Tác giả:
- Bùi Tiến Hưng
+ **Bùi Tiến Hưng**
  
  Nghiên cứu viên - Viện Năng lượng nguyên tử Việt Nam (VINATOM)
  
