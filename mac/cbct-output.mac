@@ -1,0 +1,15 @@
+# ROOT
+#/gate/output/root/enable
+#/gate/output/root/setFileName benchmarkFastCT
+#/gate/output/root/setRootHitFlag 0
+#/gate/output/root/setRootSinglesFlag 1
+#/gate/output/root/setRootNtupleFlag 0
+#/gate/output/verbose 2
+
+# ASCII
+/gate/output/ascii/setOutFileVoxelFlag false
+/gate/output/ascii/setOutFileHitsFlag false
+
+# JamesRandom Ranlux64 MersenneTwister
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed 123456

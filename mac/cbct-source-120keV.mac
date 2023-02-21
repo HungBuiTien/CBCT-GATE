@@ -1,0 +1,22 @@
+/gate/source/addSource mybeam            gps
+/gate/source/mybeam/gps/particle         gamma
+
+/gate/source/mybeam/gps/pos/type         Plane
+/gate/source/mybeam/gps/pos/shape        Rectangle
+/gate/source/mybeam/gps/pos/halfy        0.000002236 mm
+/gate/source/mybeam/gps/pos/halfz        0.000002236 mm
+/gate/source/mybeam/gps/pos/centre       -6. 0. 0. mm
+
+/gate/source/mybeam/gps/ang/type         iso
+/gate/source/mybeam/gps/ang/minphi       0. deg
+/gate/source/mybeam/gps/ang/maxphi       360. deg
+/gate/source/mybeam/gps/ang/mintheta     0. deg
+/gate/source/mybeam/gps/ang/maxtheta     15. deg
+/gate/source/mybeam/gps/ang/type         focused
+/gate/source/mybeam/gps/ang/focuspoint   0 0 0 mm
+
+/gate/source/mybeam/gps/ene/type         Mono
+/gate/source/mybeam/gps/ene/mono         120 keV
+
+/gate/source/mybeam/gps/ang/rot1         0 0 1
+

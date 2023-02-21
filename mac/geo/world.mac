@@ -1,5 +1,0 @@
-/gate/world/geometry/setXLength 2 m
-/gate/world/geometry/setYLength 2 m
-/gate/world/geometry/setZLength 2 m
-/gate/world/setMaterial Air
-/gate/world/vis/setVisible 0
