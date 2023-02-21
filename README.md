@@ -61,6 +61,8 @@ Kiểm tra tiến trình bằng lệnh:
 ```Linux Kernel Module
 $ condor_q
 ``` 
+- Trường hợp HTCondor bị lỗi không hoạt động, người sử dụng sẽ phải sao chép tất cả các tệp main sau khi được phân tách sang thư mục cùng với tệp main lúc đầu.
+Sử dụng lệnh screen và chạy lệnh giống như đối với trường hợp chạy đơn nhân cho từng tệp đầu vào được phân chia. Cách làm này tuy sẽ mất thời gian và công sức nhưng sẽ giúp người sử dụng tránh được nhiều vấn đề khi sử dụng với HTCondor.
 
 3. Hướng dẫn vẽ kết quả
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
