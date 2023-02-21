@@ -19,6 +19,9 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
  - Tấm FPD:
  - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
  
+   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/geometry.png">
+   </Chạy mô phỏng với 50 sự kiện>
+   
  ### Quá trình vật lý:
  - Loại hạt e+, e- và gamma
  - Quá trình vật lý cho e+: Bremsstrahlung, ElectronIonisation
