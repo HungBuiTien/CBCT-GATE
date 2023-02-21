@@ -18,9 +18,16 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
  - Khối World: có kích thước 200x200x200 cm3, chứa không khí
  - Tấm FPD:
  - Phantom: có dạng hình trụ gồm 7 bậc, được cấu tạo từ nhôm
- 
+  
+   <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/phantom.png">
+   
+   Hình 1. Kích thước phantom nhôm
+   
+   
    <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/geometry.png">
-   </Chạy mô phỏng với 50 sự kiện>
+   
+   Hình 2. Hình ảnh mô phỏng với 50 sự kiện
+   
    
  ### Quá trình vật lý:
  - Loại hạt e+, e- và gamma
