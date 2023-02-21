@@ -11,7 +11,13 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
 ## Hướng dẫn sử dụng:
 + Hãy thay đổi năng lượng chùm tia, loại phantom trước khi chạy
 + Sử dụng lệnh sau để chạy mô phỏng
+
   ' >> Gate mac/cbct.mac '
+  
+ + Sử dụng mã Python để hiển thị kết quả
+ <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/results.png">
+ 
+  Hình 1. Kết quả mô phỏng với 1E8 sự kiện
   
  ## Mô tả:
  ### Hình học:
@@ -21,12 +27,12 @@ Nghiên cứu này sử dụng mã mô phỏng GATE (một bộ công cụ đư�
   
    <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/phantom.png">
    
-   Hình 1. Kích thước phantom nhôm
+   Hình 2. Kích thước phantom nhôm
    
    
    <img src="https://github.com/HungBuiTien/CBCT-GATE/blob/main/geometry.png">
    
-   Hình 2. Hình ảnh mô phỏng với 50 sự kiện
+   Hình 3. Hình ảnh mô phỏng với 50 sự kiện
    
    
  ### Quá trình vật lý:
