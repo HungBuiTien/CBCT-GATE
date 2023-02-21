@@ -10,5 +10,5 @@
 #/gate/application/setTimeStop      360. s
 
 /gate/application/noGlobalOutput
-/gate/application/setTotalNumberOfPrimaries 1000
+/gate/application/setTotalNumberOfPrimaries 100000000
 /gate/application/start
